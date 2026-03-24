@@ -1,8 +1,12 @@
-import React from 'react'
+import Cover from '../components/Cover'
+import HowItWorks from '../components/HowItWorks'
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <div>
+            <Cover />
+            <HowItWorks />
+        </div>
     )
 }
 

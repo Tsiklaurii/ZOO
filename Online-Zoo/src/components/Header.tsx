@@ -19,17 +19,13 @@ const Header = () => {
                             <NavLink to='/map'><li>Map</li></NavLink>
                             <NavLink to='/zoos'><li>Zoos</li></NavLink>
                             <NavLink to='/contact'><li>Contact us</li></NavLink>
-                            <li><a href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=21-4877&t=DSve9ApAfrSFVRN4-0"
-                                target="_blank">Design</a>
-                            </li>
+                            <li><a href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=21-4877&t=DSve9ApAfrSFVRN4-0" target="_blank">Design</a></li>
                         </ul>
                     </nav>
                     <div className="networks">
                         <a href="https://www.youtube.com/@RSSchool"><img src={YouTube} alt="YouTube" /></a>
-                        <a href="https://www.instagram.com/rsschool_en?igsh=em1janI5bzZ0dXlx"><img
-                            src={Instagram} alt="Instagram" /></a>
-                        <a href="https://www.facebook.com/rsschoolEN"><img src={Facebook}
-                            alt="Facebook" /></a>
+                        <a href="https://www.instagram.com/rsschool_en?igsh=em1janI5bzZ0dXlx"><img src={Instagram} alt="Instagram" /></a>
+                        <a href="https://www.facebook.com/rsschoolEN"><img src={Facebook} alt="Facebook" /></a>
                         <div className="user">
                             <button className="user_icon" id="userIcon">
                                 <img src={UserIcon} alt="User" />
