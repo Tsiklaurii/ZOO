@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Contact from './pages/Contact'
 import Map from './pages/Map'
 import Zoos from './pages/Zoos'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/zoos' element={<Zoos />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { useLanguage } from '../i18n/LanguageContext';
 
 import Logo from '../../public/icons/Logo.svg';
 import YouTube from '../../public/icons/YouTube.svg';
@@ -8,6 +9,8 @@ import UserIcon from '../../public/icons/User.svg';
 import Hamburger from '../../public/icons/Hamburger.svg';
 
 const Header = () => {
+    const { t, lang, setLang } = useLanguage();
+
     return (
         <header>
             <div className="container">
@@ -15,11 +18,11 @@ const Header = () => {
                 <div className="menu">
                     <nav>
                         <ul className="nav">
-                            <NavLink to='/'><li>About</li></NavLink>
-                            <NavLink to='/map'><li>Map</li></NavLink>
-                            <NavLink to='/zoos'><li>Zoos</li></NavLink>
-                            <NavLink to='/contact'><li>Contact us</li></NavLink>
-                            <li><a href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=21-4877&t=DSve9ApAfrSFVRN4-0" target="_blank">Design</a></li>
+                            <NavLink to='/'><li>{t("nav.about")}</li></NavLink>
+                            <NavLink to='/map'><li>{t("nav.map")}</li></NavLink>
+                            <NavLink to='/zoos'><li>{t("nav.zoos")}</li></NavLink>
+                            <NavLink to='/contact'><li>{t("nav.contact")}</li></NavLink>
+                            <li><a href="https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=21-4877&t=DSve9ApAfrSFVRN4-0" target="_blank">{t("nav.design")}</a></li>
                         </ul>
                     </nav>
                     <div className="networks">
@@ -35,8 +38,16 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="lang_switcher">
-                        <button id="langEn" className="lang_btn active">EN</button>
-                        <button id="langKa" className="lang_btn">KA</button>
+                        <button
+                            id="langEn"
+                            className={`lang_btn ${lang === "en" ? "active" : ""}`}
+                            onClick={() => setLang("en")}
+                        >EN</button>
+                        <button
+                            id="langKa"
+                            className={`lang_btn ${lang === "ka" ? "active" : ""}`}
+                            onClick={() => setLang("ka")}
+                        >KA</button>
                     </div>
                 </div>
                 <button className="hamburger"><img src={Hamburger} alt="Hamburger" /></button>
