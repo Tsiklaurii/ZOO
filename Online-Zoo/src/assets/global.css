@@ -161,7 +161,7 @@ header .lang_switcher .lang_btn.active {
   align-items: center;
   justify-content: center;
   height: 790px;
-  background-image: url("../../../public/images/Background.png");
+  background-image: url("/images/Background.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
