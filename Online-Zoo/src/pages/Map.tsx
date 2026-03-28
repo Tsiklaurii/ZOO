@@ -1,8 +1,11 @@
+import { useLanguage } from "../i18n/LanguageContext";
 
 const Map = () => {
+    const { t } = useLanguage();
+    
     return (
         <main className="map">
-            <h1 data-i18n="map.title">find where are the animals live</h1>
+            <h1>{t("map.title")}</h1>
             <div>
                 <svg className="eagle" viewBox="0 0 141 181" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_1_521)">

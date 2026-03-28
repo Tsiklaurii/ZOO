@@ -72,9 +72,13 @@ export const en = {
         title: "Get in touch",
         description: "Whether you have a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a message and we'll get back to you as soon as we can. Whether you have a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a message and we'll get back to you as soon as we can.",
         name: "Your Name",
+        name_placeholder: "First and last name",
         email: "Your Email Address",
+        email_placeholder: "Enter your email",
         subject: "Subject",
+        subject_placeholder: "Enter the subject",
         message: "Message",
+        message_placeholder: "Enter your message",
         button: "Send message"
     },
     zoos: {
