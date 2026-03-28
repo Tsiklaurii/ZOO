@@ -96,7 +96,7 @@ export const ka = {
         size: "ზომა",
         size_description: "1.2 - 1.5 მეტრი",
         diet: "კვების რაციონი",
-        diet_description: "ყველაფრისმჭამელი",
+        diet_description: "ნაირმჭამელი",
         habitat: "საცხოვრებელი გარემო",
         habitat_description: "ტყეები",
         range: "გავრცელების არეალი",
