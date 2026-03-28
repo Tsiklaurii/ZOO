@@ -1,8 +1,8 @@
 type ButtonProps = {
-    text: string;
-    onClick?: () => void;
-    className?: string;
-    children?: React.ReactNode;
+    text: string,
+    onClick?: () => void,
+    className?: string,
+    children?: React.ReactNode
 };
 
 const Button = ({ text, onClick, className = "", children }: ButtonProps) => {
