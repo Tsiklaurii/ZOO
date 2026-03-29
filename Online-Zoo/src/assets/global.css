@@ -126,7 +126,7 @@ header .lang_switcher .lang_btn.active {
     gap: 163px;
   }
   header .menu {
-    gap: 80px;
+    gap: 60px;
   }
   header .nav {
     gap: 30px;
@@ -595,7 +595,7 @@ header .lang_switcher .lang_btn.active {
 }
 .meet_pets .pets_wrapper {
   width: 100%;
-  padding: 50px 260px 100px 260px;
+  padding: 50px 0px 100px 260px;
   overflow: hidden;
 }
 .meet_pets .pets_wrapper .loader {
@@ -610,10 +610,14 @@ header .lang_switcher .lang_btn.active {
   font-size: 30px;
   color: red;
   font-weight: 700;
+  padding-right: 260px;
 }
 @media (max-width: 1400px) {
   .meet_pets .pets_wrapper {
-    padding: 30px 40px 50px 40px;
+    padding: 30px 0px 50px 40px;
+  }
+  .meet_pets .pets_wrapper .pets_error {
+    padding: 0px;
   }
 }
 @media (max-width: 600px) {
@@ -651,6 +655,11 @@ header .lang_switcher .lang_btn.active {
   position: relative;
   border-radius: 5px;
 }
+@media (max-width: 600px) {
+  .meet_pets .pets_wrapper .pets_container .slide div {
+    width: 300px;
+  }
+}
 .meet_pets .pets_wrapper .pets_container .slide div .name {
   position: absolute;
   width: auto;
@@ -666,17 +675,32 @@ header .lang_switcher .lang_btn.active {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+@media (max-width: 600px) {
+  .meet_pets .pets_wrapper .pets_container .slide div img {
+    width: 300px;
+  }
+}
 .meet_pets .pets_wrapper .pets_container .slide div .card_info {
   padding: 30px 0px 74px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+@media (max-width: 600px) {
+  .meet_pets .pets_wrapper .pets_container .slide div .card_info {
+    padding: 30px 0px 30px;
+  }
+}
 .meet_pets .pets_wrapper .pets_container .slide div .card_info div {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 0px 45px;
+}
+@media (max-width: 600px) {
+  .meet_pets .pets_wrapper .pets_container .slide div .card_info div {
+    padding: 0px 10px;
+  }
 }
 .meet_pets .pets_wrapper .pets_container .slide div .card_info div h3 {
   font-size: 26px;

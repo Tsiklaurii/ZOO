@@ -1,4 +1,4 @@
-import Animal from '../components/Animal';
+import SideMenuAnimal from '../components/SideMenuAnimal';
 import { useLanguage } from '../i18n/LanguageContext';
 import QuickDonate from '../components/QuickDonate';
 
@@ -30,10 +30,10 @@ const Zoos = () => {
                     </div>
                     <img className="expand_arrows" src={ExpandArrows} alt="Expand arrows" />
                 </div>
-                <Animal svg={PandaVector} alt={PandaVector} />
-                <Animal svg={EagleVector} alt={EagleVector} />
-                <Animal svg={GorillaVector} alt={GorillaVector} />
-                <Animal svg={LemurVector} alt={LemurVector} />
+                <SideMenuAnimal svg={PandaVector} alt={PandaVector} />
+                <SideMenuAnimal svg={EagleVector} alt={EagleVector} />
+                <SideMenuAnimal svg={GorillaVector} alt={GorillaVector} />
+                <SideMenuAnimal svg={LemurVector} alt={LemurVector} />
                 <div className="expand2">
                     <img src={ExpandArrow} alt="Expand arrow" />
                 </div>

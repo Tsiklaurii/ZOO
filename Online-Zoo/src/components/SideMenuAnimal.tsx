@@ -3,7 +3,7 @@ type AnimalProps = {
     alt: string
 }
 
-const Animal = ({ svg, alt }: AnimalProps) => {
+const SideMenuAnimal = ({ svg, alt }: AnimalProps) => {
     return (
         <div>
             <div className="circle"><img src={svg} alt={alt} /></div>
@@ -11,4 +11,4 @@ const Animal = ({ svg, alt }: AnimalProps) => {
     )
 }
 
-export default Animal
+export default SideMenuAnimal
