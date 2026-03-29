@@ -588,9 +588,7 @@ header .lang_switcher .lang_btn.active {
 }
 @media (hover: hover) {
   .meet_pets .meet_pets_info .btns button:hover {
-    background-color: #20113D;
-    fill: #FFFFFF;
-    color: #FFFFFF;
+    background-color: #bd9cff;
   }
 }
 .meet_pets .pets_wrapper {

@@ -445,7 +445,6 @@
             }
 
             @include responsive(md) {
-                // display: none;
                 padding-bottom: 20px;
             }
 
@@ -460,9 +459,7 @@
 
                 @media (hover: hover) {
                     &:hover {
-                        background-color: $footer_bg;
-                        fill: $footer_color;
-                        color: $footer_color;
+                        background-color: $footer_bg_light;
                     }
                 }
             }
