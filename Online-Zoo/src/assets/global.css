@@ -767,7 +767,7 @@ header .lang_switcher .lang_btn.active {
 .feedback {
   width: 100%;
   height: 1776px;
-  background-image: url("../../assets/images/Feedback_bg.png");
+  background-image: url("/images/Feedback_bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -859,9 +859,7 @@ header .lang_switcher .lang_btn.active {
   font-weight: 700;
 }
 .feedback .feedback_info .feedback_wrapper .feedback_container {
-  display: flex;
-  gap: 30px;
-  transition: transform 0.5s ease;
+  width: 100%;
 }
 .feedback .feedback_info .feedback_wrapper .feedback_container .slide {
   display: flex;
@@ -874,7 +872,8 @@ header .lang_switcher .lang_btn.active {
   }
 }
 .feedback .feedback_info .feedback_wrapper .feedback_container .slide .feedback_card {
-  width: 515px;
+  width: 100%;
+  max-width: 515px;
   height: 463px;
   padding: 20px 50px 70px 50px;
   background-color: #FFFFFF;
